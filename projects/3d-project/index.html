@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3D Room Project</title>
+		<meta charset="utf-8">
+		<style>
+			body {
+				margin: 0;
+				background-color: #111;
+				color: white;
+				overflow: hidden; /* Hide scrollbars */
+			}
+			canvas {
+				display: block; /* Remove canvas default margin */
+			}
+			#info {
+				position: absolute;
+				top: 10px;
+				width: 100%;
+				text-align: center;
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				color: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="info">Click and drag to orbit the room.</div>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "https://unpkg.com/three@0.147.0/build/three.module.js",
+					"three/addons/loaders/GLTFLoader.js": "https://unpkg.com/three@0.147.0/examples/jsm/loaders/GLTFLoader.js",
+					"three/addons/controls/OrbitControls.js": "https://unpkg.com/three@0.147.0/examples/jsm/controls/OrbitControls.js"
+				}
+			}
+		</script>
+
+		<script type="module" src="./app.js"></script>
+	</body>
+</html>
