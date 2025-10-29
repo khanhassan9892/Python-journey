@@ -6,4 +6,5 @@ print(d.get("wow2")) #geting values using get method #prints none output none
 # print(d["wow2"]) #geting values using key that is not present #gives error
 print(d.keys()) #prints all keys in dictionary
 print(d.pop("why")) #removes the key value pair of key why
+print(len(d))  #"why" rmeoved before so output is 2
 print(d)

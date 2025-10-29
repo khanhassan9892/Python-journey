@@ -4,3 +4,4 @@ print(d, type(d))
 
 #methods of disctionary
 print(d["szzpect"]) #getin values
+#
